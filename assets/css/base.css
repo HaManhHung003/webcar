@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 51.6%;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+:root
+{
+    --text-color: #333;
+    --white-color: #fff;
+    --text-hover: #e61414;
+    --main-color: #c00;
+}
+
+a
+{
+    list-style: none;
+    text-decoration: none !important;
+    color: var(--text-color);
+}
+
+ul
+{
+    list-style: none;
+}
+
+li a
+{
+    text-decoration: none;
+    /* color: var(--text-color); */
+}
+
+.item__hover:hover
+{
+    background-color: var(--text-hover);
+    color: var(--white-color);
+    transition: 0.3s;
+}

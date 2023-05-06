@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" class="x_icon"  href="../assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/fonts/icofont/icofont/icofont.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <script src="../assets/js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/bootstrap.js"></script>
+    <title>HONDA | Sản phẩm</title>
+    <script>
+        $(document).ready(function(){
+            $(".head__heading").hover(function(){
+                $(".head__wrap").slideDown(1500);
+            });
+            $(".head__item").mouseleave(function(){
+                $(".head__wrap").slideUp(500);
+            });
+
+            $(".classify__bike").click(function(){
+                $(".product__content").css({display: 'flex'});
+                $(".product__contents").css({display: 'none'});
+            });
+            $(".classify__car").click(function(){
+                $(".product__contents").css({display: 'flex'});
+                $(".product__content").css({display: 'none'});
+            });
+
+            $(".modal__car-icon").click(function(){
+                $(".modalcar").fadeOut(500);
+            })
+        });
+
+    </script>
+</head>
+<body>
+    <div class="modalcar">
+        <div class="modal__car">
+            <img src="../assets/img/bannercar.png" alt="" class="modal__car-img">
+            <i class="icofont-close-line-circled modal__car-icon"></i>
+        </div>
+    </div>
+    <div class="head">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header">
+                    <a href="../html/home.html"><img src="../assets/img/logo.svg" alt="" class="header__logo"></a>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            Thăm dò ý kiến khách hàng
+                            <ul class="header__child">
+                                <li class="header__child-item">Ô tô</li>
+                                <li class="header__child-item">Xe máy</li>
+                            </ul>
+                        </li>
+                        <li class="header__item">Câu hỏi thường gặp</li>
+                        <li class="header__item">Liên hệ</li>
+                        <li class="header__item">
+                            Tuyển dụng
+                            <ul class="header__child">
+                                <li class="header__child-item">Môi trường làm việc</li>
+                                <li class="header__child-item">Tin tức sự kiện</li>
+                                <li class="header__child-item">Cơ hội việc làm</li>
+                                <li class="header__child-item">Quy trình ứng tuyển</li>
+                                <li class="header__child-item">Câu hỏi thường gặp</li>
+                            </ul>
+                        </li>
+                        <li class="header__item">Mời thầu</li>
+                        <li class="header__item">
+                            <div class="head__list">
+                                <img src="../assets/img/ico-facebook-red.png" alt="" class="head__img">
+                                <img src="../assets/img/ico-ig-red.png" alt="" class="head__img">
+                                <img src="../assets/img/ico-youtube-red.png" alt="" class="head__img">
+                                <div class="head__item">
+                                    <h3 class="head__heading">
+                                        Honda Việt Nam
+                                        <i class="icofont-hand-drawn-down"></i>
+                                    </h3>
+                                    <div class="head__wrap">
+                                        <img src="../assets/img/ico-facebook.png" alt="" class="head__logo">
+                                        <img src="../assets/img/ico-ig.png" alt="" class="head__logo">
+                                        <img src="../assets/img/ico-youtube.png" alt="" class="head__logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <nav class="navigation">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                Giới thiệu
+                                <ul class="header__child">
+                                    <li class="header__child-item">Giới thiệu Honda Việt Nam</li>
+                                    <li class="header__child-item">Lịch sử phát triển</li>
+                                    <li class="header__child-item">Thư của Tổng giám đốc</li>
+                                    <li class="header__child-item">Triết Lý Honda</li>
+                                    <li class="header__child-item">Tầm nhìn 2030</li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                Xe máy
+                                <ul class="header__child">
+                                    <li class="header__child-item">Sản phẩm</li>
+                                    <li class="header__child-item">Phụ tùng</li>
+                                    <li class="header__child-item">Phụ kiện</li>
+                                    <li class="header__child-item">Dịch vụ sau bán hàng</li>
+                                    <li class="header__child-item">Của hàng Honda Ủy nhiệm</li>
+                                    <li class="header__child-item">Bán hàng Doanh nghiệp</li>
+                                    <li class="header__child-item">Cuộc thi Lái xe Sinh thái</li>
+                                    <li class="header__child-item">Tin Tức</li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                Ô tô
+                                <ul class="header__child">
+                                    <li class="header__child-item">Chiến dịch "Fell The Performance</li>
+                                    <li class="header__child-item">Sản phẩm</li>
+                                    <li class="header__child-item">HONDA CONNECT</li>
+                                    <li class="header__child-item">Phụ tùng</li>
+                                    <li class="header__child-item">Phụ kiện</li>
+                                    <li class="header__child-item">Đại lý</li>
+                                    <li class="header__child-item">Bán hàng Doanh nghiệp</li>
+                                    <li class="header__child-item">Tin tức</li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                My Honda+
+                                <ul class="header__child">
+                                    <li class="header__child-item">Giới thiệu chung</li>
+                                    <li class="header__child-item">Hướng dẫn sử dụng</li>
+                                    <li class="header__child-item">Điều khoản sử dụng</li>
+                                    <li class="header__child-item">Tải ứng dụng</li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                Đóng góp xã hội
+                            </li>
+                            <li class="nav__item">
+                                Lái xe an toàn
+                                <ul class="header__child">
+                                    <li class="header__child-item">Chương trình Tôi yêu Việt Nam</li>
+                                    <li class="header__child-item">Trung tam Đào tạo lái xe an toàn</li>
+                                    <li class="header__child-item">Hoạt động đào tạo</li>
+                                    <li class="header__child-item">Tin tức</li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#tab" id="link" class="nav-link" data-bs-toggle="offcanvas">Login</a>
+                            </li>
+                            <li class="nav__item">
+                                Tin tức
+                                <ul class="header__child">
+                                    <li class="header__child-item">Tin tức chung</li>
+                                    <li class="header__child-item">Tin tức xe máy</li>
+                                    <li class="header__child-item">Tin tức ô tô</li>
+                                    <li class="header__child-item">Doanh số bán hàng</li>
+                                    <li class="header__child-item">Khuyến mãi</li>
+                                    <li class="header__child-item">ĐÓng góp Xã hội</li>
+                                    <li class="header__child-item">Lái xe an toàn</li>
+                                    <li class="header__child-item">MotorSports</li>
+                                    <li class="header__child-item">Các tin khác</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab" class="offcanvas offcanvas-end">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Tài khoản</h3>
+            <button class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="navbar-navbar-expand-lg">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#dki" data-bs-toggle="modal" class="nav-link">Đăng ký</a></li>
+                    <li class="nav-item"><a href="#dnhap" data-bs-toggle="modal" class="nav-link">Đăng nhập</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Thông tin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="modal fade" id="dki">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Đăng ký</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="dnhap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Đăng nhập</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="../assets/img/banner__car.png" alt="" class="slide__img">
+                <div class="slide__nav">
+                    <i class="icofont-rounded-left"></i>
+                    <ul class="slide__list">
+                        <li class="slide__item"></li>
+                        <li class="slide__item"></li>
+                        <li class="slide__item"></li>
+                        <li class="slide__item"></li>
+                        <li class="slide__item"></li>
+                    </ul>
+                    <i class="icofont-rounded-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car">
+        <div class="container-fluid grid wide">
+            <div class="row">
+                <div class="car__list">
+                    <div class="car__item col-xl-4">
+                        <a href="../html/product1.html" class="car__link">
+                            <img src="../assets/img/car1.png" alt="" class="car__img">
+                            <h3 class="product__subhead">CR-V</h3>
+                            <p class="product__title">Từ 998.000.000 VNĐ</p>
+                            <div class="car__wrap">
+                            <div class="car__try"><i class="icofont-circle-ruler-alt"></i>Lái thử</div>
+                            <div class="car__cost"><i class="icofont-money"></i>Dự toán chi phí</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="car__item col-xl-4">
+                        <a href="../html/product2.html" class="car__link">
+                            <img src="../assets/img/car2.png" alt="" class="car__img">
+                            <h3 class="product__subhead">ACCORD</h3>
+                            <p class="product__title">Từ 1.319.000.000 VNĐ</p>
+                            <div class="car__wrap">
+                                <div class="car__try"><i class="icofont-circle-ruler-alt"></i>Lái thử</div>
+                                <div class="car__cost"><i class="icofont-money"></i>Dự toán chi phí</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="car__item col-xl-4">
+                        <a href="../html/product3.html" class="car__link">
+                            <img src="../assets/img/car3.png" alt="" class="car__img">
+                            <h3 class="product__subhead">CIVIC TYPE R</h3>
+                            <p class="product__title">Từ 2.399.000.000 VNĐ</p>
+                            <div class="car__wrap">
+                                <div class="car__try"><i class="icofont-circle-ruler-alt"></i>Lái thử</div>
+                                <div class="car__cost"><i class="icofont-money"></i>Dự toán chi phí</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="car__item col-xl-4">
+                        <a href="../html/product4.html" class="car__link">
+                            <img src="../assets/img/car4.png" alt="" class="car__img">
+                            <h3 class="product__subhead">CIVIC</h3>
+                            <p class="product__title">Từ 730.000.000 VNĐ</p>
+                            <div class="car__wrap">
+                                <div class="car__try"><i class="icofont-circle-ruler-alt"></i>Lái thử</div>
+                                <div class="car__cost"><i class="icofont-money"></i>Dự toán chi phí</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="car__item col-xl-4">
+                        <a href="../html/product5.html" class="car__link">
+                            <img src="../assets/img/car5.png" alt="" class="car__img">
+                            <h3 class="product__subhead">HR-V</h3>
+                            <p class="product__title">Từ 699.000.000 VNĐ</p>
+                            <div class="car__wrap">
+                                <div class="car__try"><i class="icofont-circle-ruler-alt"></i>Lái thử</div>
+                                <div class="car__cost"><i class="icofont-money"></i>Dự toán chi phí</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="car__item col-xl-4">
+                        <a href="../html/product6.html" class="car__link">
+                            <img src="../assets/img/car6.png" alt="" class="car__img">
+                            <h3 class="product__subhead">CITY</h3>
+                            <p class="product__title">Từ 529.000.000 VNĐ</p>
+                            <div class="car__wrap">
+                                <div class="car__try"><i class="icofont-circle-ruler-alt"></i>Lái thử</div>
+                                <div class="car__cost"><i class="icofont-money"></i>Dự toán chi phí</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid grid wide">
+            <div class="row">
+                <div class="footer">
+                    <div class="footer__list">
+                        <div class="footer__item col-xl-2">
+                            <h3 class="footer__heading">xe máy</h3>
+                            <a href="" class="footer__title">Sản phẩm</a>
+                            <a href="" class="footer__title">Phụ tùng</a>
+                            <a href="" class="footer__title">Phụ kiện</a>
+                            <a href="" class="footer__title">Dịch vụ sau bán hàng</a>
+                            <a href="" class="footer__title">CỬa hàng Honda Ủy nhiệm</a>
+                            <a href="" class="footer__title">Bán hàng Doanh nghiệp</a>
+                            <a href="" class="footer__title">Cuộc thi Lái xe sinh thái</a>
+                            <a href="" class="footer__title">Tin tức</a>
+                        </div>
+                        <div class="footer__item col-xl-2">
+                            <h3 class="footer__heading">Ô tô</h3>
+                            <a href="" class="footer__title">Sản phẩm</a>
+                            <a href="" class="footer__title">Phụ tùng</a>
+                            <a href="" class="footer__title">Phụ kiện</a>
+                            <a href="" class="footer__title">Đại lý</a>
+                            <a href="" class="footer__title">Tin tức</a>
+                        </div>
+                        <div class="footer__item col-xl-2">
+                            <h3 class="footer__heading">đóng góp xã hội</h3>
+                            <a href="" class="footer__title">Thông tin môi trường</a>
+                            <a href="" class="footer__title">Hỗ trợ môi trường</a>
+                            <a href="" class="footer__title">Hỗ trợ giáo dục</a>
+                            <a href="" class="footer__title">Hỗ trợ cộng đồng</a>
+                            <a href="" class="footer__title">Tin tức</a>
+                        </div>
+                        <div class="footer__item col-xl-2">
+                            <h3 class="footer__heading">lái xe an toàn</h3>
+                            <a href="" class="footer__title">Chương trình tôi yêu Việt Nam</a>
+                            <a href="" class="footer__title">Trung tâm đào tạo lái xe an toàn</a>
+                            <a href="" class="footer__title">Hoạt động đào tạo</a>
+                            <a href="" class="footer__title">Tin tức</a>
+                        </div>
+                        <div class="footer__item col-xl-2">
+                            <h3 class="footer__heading">motorsports</h3>
+                        </div>
+                        <div class="footer__item col-xl-2">
+                            <h3 class="footer__heading">tin tức</h3>
+                            <a href="" class="footer__title">Tin tức chung</a>
+                            <a href="" class="footer__title">Tin tức xe máy</a>
+                            <a href="" class="footer__title">Tin tức ô tô</a>
+                            <a href="" class="footer__title">Doanh số bán hàng</a>
+                            <a href="" class="footer__title">Khuyến mãi</a>
+                            <a href="" class="footer__title">Đóng góp xã hội</a>
+                            <a href="" class="footer__title">Lái xe an toàn</a>
+                            <a href="" class="footer__title">MotorSports</a>
+                            <a href="" class="footer__title">Các tin khác</a>
+                        </div>
+                        <div class="footer__item col-xl-4">
+                            <h3 class="footer__heading">công ty honda việt nam</h3>
+                            <p class="footer__title">Số GPDKDN: 2615512541</p>
+                            <p class="footer__title">Bắt đầu ngày: 8/1/2023</p>
+                            <p class="footer__title">Địa chỉ: Lê Văn Bảo, Phường 5, Gò Vấp</p>
+                            <img src="../assets/img/logoSaleNoti.png" alt="" class="footer__img">
+                        </div>
+                        <div class="footer__item col-xl-4">
+                            <h3 class="footer__heading">đăng ký nhận tin</h3>
+                            <input type="text" name="textName" class="form__footer" placeholder="Họ và Tên...">
+                            <input type="email" name="txtEmail"  class="form__footer" placeholder="E-mail...">
+                            <select name="" class="form__footer">
+                                <option value="1">Đăng ký nhận tin</option>
+                                <option value="2">Tin tức xe máy</option>
+                                <option value="3">Tin tức ô tô</option>
+                                <option value="4">Doanh số bán hàng</option>
+                                <option value="5">Khuyến mãi</option>
+                                <option value="6">Lái xe an toàn</option>
+                                <option value="7">Đóng góp xã hội</option>
+                                <option value="8">CSKH</option>
+                                <option value="9">Các tin tức khác</option>
+                            </select>
+                            <button type="submit" value="submit">Đăng ký</button>
+                        </div>
+                        <div class="footer__item col-xl-4">
+                            <h3 class="footer__heading">đường dây nóng</h3>
+                            <p class="footer__title">Hotline: <span>18008001</span>(miễn phí cho tất cả thuê bao)</p>
+                            <p class="footer__title">Email: <a href="">cr@honda.com.vn</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__end">
+                        <p class="footer__cpr">© 2019. Copyright by Honda VietNam</p>
+                        <p class="footer__cpr"><a href="">Terms and Conditions</a></p>
+                        <p class="footer__cpr"><a href="">Privacy Policy</a></p>
+                        <p class="footer__cpr"><a href="">Cookie Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="uptop" href="#top"><i class="icofont-square-up"></i></a>
+    </footer>
+</body>
+
+</html>
